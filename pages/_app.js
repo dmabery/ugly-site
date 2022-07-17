@@ -1,13 +1,13 @@
 import '../styles/globals.css'
-import Sidebar from '../components/Sidebar.js';
+import SideBar from '../components/SideBar.js'
 import "prismjs";
 import "../styles/prism-theme.css"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Sidebar>
+    <SideBar>
       <Component {...pageProps} />
-    </Sidebar>
+    </SideBar>
   )
 }
 

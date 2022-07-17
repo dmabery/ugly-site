@@ -15,7 +15,7 @@ const links = [
     }
 ]
 
-const Sidebar = ({ children }) => {
+const SideBar = ({ children }) => {
 
   return (
     <div className="min-h-screen flex flex-col text-sm">
@@ -37,4 +37,4 @@ const Sidebar = ({ children }) => {
   )
 }
 
-export default Sidebar;
+export default SideBar;
