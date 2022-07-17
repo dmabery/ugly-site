@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import React from 'react'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Markdown from 'markdown-to-jsx';
+import Meta from '../../Components/meta';
 
 
 const client = createClient({
