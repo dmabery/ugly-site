@@ -6,7 +6,7 @@ const links = [
         slug: '/'
     },
     {
-        title: 'Book list',
+        title: 'Book List',
         slug: '/books'
     },
     {
@@ -18,13 +18,13 @@ const links = [
 const SideBar = ({ children }) => {
 
   return (
-    <div className="min-h-screen flex flex-col text-sm  sm:p-0 md:p-10">
-    <div className="flex md:flex-row flex-1">
+    <div className="min-h-screen flex text-sm sm:p-0 md:p-10">
+    <div className="flex flex-col md:flex-row">
         <aside className="p-5 sm:mr-0 md:mr-10">
-          <div className="mb-10">
+          <div className="flex flex-row md:flex-col">
           {links.map(link => (
-                    <div key={link.title}><Link href = {`${link.slug}`} passHref>
-                        <a className="font-medium py-1 text-blue-600 rounded-lg underline underline-offset-4 text-sm decoration-dotted inline-block">{link.title}</a>
+                    <div className="m-1" key={link.title}><Link href = {`${link.slug}`} passHref>
+                        <a className="font-medium py-1 text-blue-600 rounded-lg underline underline-offset-4 text-sm decoration-dotted md:mb-2">{link.title}</a>
                     </Link></div>
                 ))}
             </div>
