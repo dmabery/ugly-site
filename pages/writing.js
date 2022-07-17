@@ -18,7 +18,7 @@ const Writing = ({ posts }) => {
     }
 }
 return (
-        <ul className="max-w-lg text-blue-600 list-disc" >
+        <ul className="max-w-lg text-blue-600 list-disc ml-3" >
             {posts.map(post => (
                          <li className='mb-2' key={post.fields.slug}>
                             <Link href={'/' + slugFunction(post.sys.contentType.sys.id) + post.fields.slug} passHref>
