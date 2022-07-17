@@ -2,7 +2,7 @@ import { createClient } from 'contentful'
 import React from 'react'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Markdown from 'markdown-to-jsx';
-import Meta from '../../Components/meta';
+import Meta from '../../components/meta'
 
 
 const client = createClient({
@@ -42,6 +42,10 @@ export const getStaticProps = async ({params}) => {
 }
 
   const PostPage = ({post}) => {
+    useEffect(() => {
+        prism.highlightAll();
+      }, []);
+
     if (!post) return <div>loading</div>
     const description = documentToHtmlString(post.fields.description)
     const checkImage = post.fields.hasOwnProperty('image') ? `https://` + post.fields.image.fields.file.url : 'https://images.ctfassets.net/nk2hkdvz2uym/5yB87OQ11Ps4rMfWMQay'
