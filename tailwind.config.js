@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      heading: ['Space Grotesk', 'Sans-Serif'],
+      body: ['Inter', 'Monospace'],
+      mono: ['monospace']
+    }
   },
   plugins: [
     require('@tailwindcss/typography')

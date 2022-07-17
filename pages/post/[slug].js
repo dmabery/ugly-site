@@ -50,7 +50,7 @@ export const getStaticProps = async ({params}) => {
         <Meta title={post.fields.title || ''} description={description} image={checkImage} />
         <p className='text-xl font-bold mb-2'>{post.fields.title}</p>
         <div className='text-sm max-w-lg'>
-            <Markdown className='prose prose-sm'>{post.fields.content2}</Markdown>
+            <Markdown className='prose prose-sm prose-a:text-blue-600 prose-a:decoration-dotted'>{post.fields.content2}</Markdown>
         </div>
 
         

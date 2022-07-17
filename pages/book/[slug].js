@@ -46,9 +46,10 @@ export const getStaticProps = async ({params}) => {
     const checkImage = post.fields.hasOwnProperty('image') ? `https://` + post.fields.image.fields.file.url : 'https://images.ctfassets.net/nk2hkdvz2uym/5yB87OQ11Ps4rMfWMQay'
       return (
         <>
+        <Meta title={post.fields.title || ''} description={description} image={checkImage} />
         <p className='text-xl font-bold mb-2'>{post.fields.title}</p>
         <div className='text-sm max-w-lg'>
-            <Markdown className='prose prose-sm'>{post.fields.content2}</Markdown>
+            <Markdown className='prose prose-sm prose-a:text-blue-600 prose-a:decoration-dotted'>{post.fields.content2}</Markdown>
         </div>
 
         
