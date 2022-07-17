@@ -16,6 +16,7 @@ const Meta = (props) => {
                 <meta property="og:description" content={props.description}/>
                 <meta name="description" content="Understanding more of the world." />
                 <meta property="og:image" content={props.image} />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
             </Head>
         </>
     )

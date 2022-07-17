@@ -77,8 +77,8 @@ const Books = (notes) => {
     console.log(notes)
     return (
         <div className=''>
-            <p className="mb-5 max-w-md">These are the books I&aposve read (ordered by most recent) along with my arbitrary rating that you can totally disagree with. If it&aposs linked, I&aposve published my notes.</p>
-            <p className="mb-5 max-w-md">If you&aposre looking for books to read, skim this list or check out <a gref='https://tommycollison.com/greatbooks' target="blank">The Great Books Project</a>. I&aposve yet to embark on it, but plan to.</p>
+            <p className="mb-5 max-w-md">These are the books I&#39;ve read (ordered by most recent) along with my arbitrary rating that you can totally disagree with. If it&#39;s linked, I&#39;ve published my notes.</p>
+            <p className="mb-5 max-w-md">If you&#39;re looking for books to read, skim this list or check out <a gref='https://tommycollison.com/greatbooks' target="blank">The Great Books Project</a>. I&#39;ve yet to embark on it, but plan to.</p>
             <ul>
                 {notes.notes.map((book) => (
                         book.fields.content2 ? (<li className="mb-2"><a href={`book/${book.fields.slug}`}>{book.fields.title}</a> - {book.fields.rating}</li>)
