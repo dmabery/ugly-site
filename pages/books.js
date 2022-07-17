@@ -81,7 +81,7 @@ const Books = (notes) => {
             <p className="mb-5 max-w-md">If you&#39;re looking for books to read, skim this list or check out <a gref='https://tommycollison.com/greatbooks' target="blank">The Great Books Project</a>. I&#39;ve yet to embark on it, but plan to.</p>
             <ul>
                 {notes.notes.map((book) => (
-                        book.fields.content2 ? (<li className="mb-2"><a href={`book/${book.fields.slug}`}>{book.fields.title}</a> - {book.fields.rating}</li>)
+                        book.fields.content2 ? (<li className="mb-2"><Link href={`book/${book.fields.slug}`}><a>{book.fields.title}</a></Link> - {book.fields.rating}</li>)
                         : (<li className="mb-2">{book.fields.title} - {book.fields.rating}</li>)
                     ))}
             </ul>
