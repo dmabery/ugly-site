@@ -4,6 +4,7 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Markdown from 'markdown-to-jsx';
 import Meta from '../../components/meta'
 import { useEffect } from 'react';
+const prism = require("prismjs")
 
 
 const client = createClient({
