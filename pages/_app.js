@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Sidebar from '../components/sidebar';
+import Sidebar from '../components/sidebar.js';
 import "prismjs";
 import "../styles/prism-theme.css"
 
