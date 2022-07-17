@@ -3,6 +3,7 @@ import React from 'react'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Markdown from 'markdown-to-jsx';
 import Meta from '../../components/meta'
+import { useEffect } from 'react';
 
 
 const client = createClient({
