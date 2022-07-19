@@ -1,5 +1,7 @@
 import { getAllPostsFromContentful, getLatestFromContentful } from '../lib/contentful'
 import Link from 'next/link'
+import Meta from "../components/meta";
+
 
 export const getStaticProps = async () => {
     return getAllPostsFromContentful();

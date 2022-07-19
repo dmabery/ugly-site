@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getNotesFromContentful } from "../lib/contentful";
+import Meta from "../components/meta";
 
 const bookList = [
     {
