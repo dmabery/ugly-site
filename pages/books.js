@@ -152,6 +152,7 @@ export const getStaticProps = async () => {
 const Books = () => {
     return (
         <div className=''>
+        <Meta title="Dalton's books" />
             <p className="mb-5 max-w-md">These are the books I&#39;ve read (ordered by most recent) along with my arbitrary rating that you can totally disagree with. If it&#39;s linked, I&#39;ve published my notes.</p>
             <p className="mb-5 max-w-md">If you&#39;re looking for books to read, skim this list or check out <a gref='https://tommycollison.com/greatbooks' target="blank">The Great Books Project</a>. I&#39;ve yet to embark on it, but plan to.</p>
             <ul className="list-disc ml-10">
