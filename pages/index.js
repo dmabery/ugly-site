@@ -2,12 +2,29 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Meta from '../components/meta'
+import { getLatestFromContentful } from '../lib/contentful'
+import Link from 'next/link'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  return getLatestFromContentful();
+}
+
+export default function Home(posts) {
+
+      const slugFunction = (contentType) => {
+    
+        if (contentType === 'bookNotes') {
+            return 'book/';
+        } else if (contentType === 'tinyThought') {
+            return 'thought/';  
+        } else if (contentType === 'snippet') {
+            return 'post/';
+    }
+}
   return (
     <div className="container">
       <Meta title="Dalton's site" />
-      <div className="text-sm">
+      <div className="text-sm mb-3">
         <p className='mb-3'>I&#39;m a video editor, designer, developer, and writer.</p>
         <p className='mb-3'>I love to read books, especially old ones. Currently studying history, science, programming and writing about what I learn.</p>
         <p className='mb-1'>Work: Video, design, and marketing at <a href="https://fs.blog/" target="blank">Farnam Street.</a></p>
@@ -19,6 +36,19 @@ export default function Home() {
           <li>Graduated from Southeastern University in 2021 with a degree in Digital Media and Design</li>
           <li>Started programming in 2021</li>
         </ul>
+      </div>
+      <div>
+        <h1 className='text-lg mb-1 font-bold'>Latest Posts</h1>
+          <ul className="max-w-lg text-blue-600 list-disc ml-3" >
+                  {posts.posts.map(post => (
+                              <li className='mb-2' key={post.fields.slug}>
+                                  <Link href={'/' + slugFunction(post.sys.contentType.sys.id) + post.fields.slug} passHref>
+                                  <a className="text-sm col-span-3">{post.fields.title}</a>
+                                  </Link>
+                              </li>
+
+                  ))}
+              </ul>
       </div>
     </div>
   )
