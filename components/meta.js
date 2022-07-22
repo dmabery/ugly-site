@@ -5,6 +5,7 @@ const Meta = (props) => {
         <>
             <Head>
                 <title>{props.title}</title>
+                <link rel="shortcut icon" href="/favicon 3.png" />
                 <meta property="og:title" content={props.title}/>
                 <meta property="og:site_name" content="dalton's site" />
                 <meta property="og:type" content="website"/>
