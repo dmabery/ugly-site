@@ -24,21 +24,16 @@ export default function Home(posts) {
   return (
     <div className="container">
       <Meta title="Dalton's site" />
-      <div className="text-sm mb-3">
-        <p className='mb-3'>I&#39;m a video editor, designer, developer, and writer.</p>
-        <p className='mb-3'>I love to read books, especially old ones. Currently studying history, science, programming and writing about what I learn.</p>
+      <div className="text-sm mb-5 max-w-lg">
+        <p className='mb-3'>I&#39;m a video editor, designer, developer, and writer interested in to using technology to increase the diffusion of knowledge. </p>
+        <p className='mb-5'>I&rsquo;m currently studying physics and computer science.</p>
+        <h3 className='text-sm mb-2 font-bold uppercase'>Where you can find me</h3>
         <p className='mb-1'>Work: Video, design, and marketing at <a href="https://fs.blog/" target="blank">Farnam Street.</a></p>
         <p className='mb-1'>Writing: <a className='text-blue-600 underline decoration-dotted underline-offset-4' href="https://atomsofuniverse.substack.com/" target="blank">Atoms of the Universe</a></p>
         <p className='mb-3'>Elsewhere: <a href="https://twitter.com/daltonmabery" target="blank">Twitter</a>, <a>YouTube</a>, <a href="https://github.com/dmabery" target="blank">Github</a></p>
-        <ul className='list-disc pl-3'>
-          <li>Graduated high school in 2017</li>
-          <li>Worked at Bayside Church for 3 years as Social Media Manager and Communications Coordinator</li>
-          <li>Graduated from Southeastern University in 2021 with a degree in Digital Media and Design</li>
-          <li>Started programming in 2021</li>
-        </ul>
       </div>
       <div>
-        <h1 className='text-lg mb-1 font-bold'>Latest Posts</h1>
+        <h3 className='text-sm mb-2 text- font-bold uppercase'>Latest Posts</h3>
           <ul className="max-w-lg text-blue-600 list-disc ml-3" >
                   {posts.posts.map(post => (
                               <li className='mb-2' key={post.fields.slug}>

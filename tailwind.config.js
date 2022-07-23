@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      heading: ['Space Grotesk', 'Sans-Serif'],
-      body: ['Inter', 'Monospace'],
+      heading: ['Space Grotesk', 'monospace'],
+      body: ['Inter', 'Sans-serif'],
       mono: ['monospace']
     }
   },
