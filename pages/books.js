@@ -4,6 +4,11 @@ import Meta from "../components/meta";
 
 const bookList = [
     {
+        title: 'The Clockwork Universe by Edward Dolnick' ,
+        link: '/the-clockwork-universe' ,
+        rating: '⭐️⭐️⭐️⭐️' , 
+    },
+    {
         title: 'Da Vinci by Walter Isaacson' ,
         link: '/leonardo-da-vinci' ,
         rating: '⭐️⭐️⭐️⭐️' , 
