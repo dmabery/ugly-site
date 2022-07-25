@@ -161,7 +161,7 @@ const Books = () => {
         <Meta title="Dalton's books" />
             <p className="mb-5 max-w-md">These are the books I&#39;ve read (ordered by most recent) along with my arbitrary rating that you can totally disagree with. If it&#39;s linked, I&#39;ve published my notes.</p>
             <p className="mb-5 max-w-md">If you&#39;re looking for books to read, skim this list or check out <a gref='https://tommycollison.com/greatbooks' target="blank">The Great Books Project</a>. I&#39;ve yet to embark on it, but plan to.</p>
-            <ul className="list-disc ml-10">
+            <ul className="list-disc ml-4">
                 {bookList.map((book) => (
                         book.link ? (<li className="mb-2"><Link href={`book${book.link}`}><a>{book.title}</a></Link> - {book.rating}</li>)
                         : (<li className="mb-2">{book.title} - {book.rating}</li>)
