@@ -30,7 +30,7 @@ export default function Home(posts) {
         <h3 className='text-sm mb-2 font-bold uppercase'>Where you can find me</h3>
         <p className='mb-1'>Work: Video, design, and marketing at <a href="https://fs.blog/" target="blank">Farnam Street.</a></p>
         <p className='mb-1'>Writing: <Link className='text-blue-600 underline decoration-dotted underline-offset-4' href="/writing" target="blank">Atoms of the Universe</Link></p>
-        <p className='mb-3'>Elsewhere: <a href="https://twitter.com/daltonmabery" target="blank">Twitter</a>, <a>YouTube</a>, <a href="https://github.com/dmabery" target="blank">Github</a></p>
+        <p className='mb-3'>Elsewhere: <a href="https://twitter.com/daltonmabery" target="blank">Twitter</a>, <a href="https://www.youtube.com/daltonmabery">YouTube</a>, <a href="https://github.com/dmabery" target="blank">Github</a></p>
       </div>
       <div>
         <h3 className='text-sm mb-2 text- font-bold uppercase'>Latest Posts</h3>
