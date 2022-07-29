@@ -25,7 +25,7 @@ export default function Home(posts) {
     <div className="container">
       <Meta title="Dalton's site" />
       <div className="text-sm mb-5 max-w-lg">
-        <p className='mb-3'>I&#39;m a video editor, designer, developer, and writer interested in to using technology to increase the diffusion of knowledge. </p>
+        <p className='mb-3'>I&#39;m a video editor, designer, developer, and writer interested in using technology to increase the diffusion of knowledge. </p>
         <p className='mb-5'>I&rsquo;m currently studying physics and computer science.</p>
         <h3 className='text-sm mb-2 font-bold uppercase'>Where you can find me</h3>
         <p className='mb-1'>Work: Video, design, and marketing at <a href="https://fs.blog/" target="blank">Farnam Street.</a></p>
