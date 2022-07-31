@@ -12,6 +12,10 @@ const links = [
     {
         title: 'Writing',
         slug: '/writing'
+    },
+    {
+        title: 'Notes',
+        slug: 'https://notes.daltonmabery.com/00+Meta/09+Helpful+information/About+these+notes'
     }
 ]
 
